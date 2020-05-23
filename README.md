@@ -39,11 +39,11 @@ Należy pozwolić przeglądarce na wykorzystanie kamery internetowej
 
 ## Jak to działa 1
 
-<img src="./documentation/1.jpg">
-<img src="./documentation/2.jpg">
-<img src="./documentation/3.jpg">
-<img src="./documentation/4.jpg">
-<img src="./documentation/5.jpg">
+<img src="./documentation/1.JPG">
+<img src="./documentation/2.JPG">
+<img src="./documentation/3.JPG">
+<img src="./documentation/4.JPG">
+<img src="./documentation/5.JPG">
 
 ## Jak uruchomić 2
 
@@ -59,4 +59,4 @@ oraz Local binary patterns histograms (LBPH)
 
 ## Jak to działa 2
 
-<img src="./documentation/regonizer.jpg">
+<img src="./documentation/regonizer.JPG">
