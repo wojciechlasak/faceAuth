@@ -59,4 +59,4 @@ oraz Local binary patterns histograms (LBPH)
 
 ## Jak to działa 2
 
-<img src="./documentation/regonizer.JPG">
+<img src="./documentation/recognizer.JPG">
