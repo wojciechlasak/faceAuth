@@ -6,7 +6,7 @@ const classifier = new cv.CascadeClassifier(cv.HAAR_FRONTALFACE_ALT2);
 
 const basePath = './images_db';
 const subjectsPath = path.resolve(basePath, 'subjects');
-const nameMappings = ['conan','wojciech'];
+const nameMappings = ['conan','wojciech','jennifer'];
 const allFiles = fs.readdirSync(subjectsPath);
 
 const getFaceImage = (grayImage) => {

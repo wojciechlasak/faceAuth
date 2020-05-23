@@ -82,7 +82,7 @@ async function checkFace() {
 
     const basePath = './images_db';
     const subjectsPath = path.resolve(basePath, 'subjects');
-    const nameMappings = ['conan', 'wojciech', 'unknwn'];
+    const nameMappings = ['conan', 'wojciech','jennifer', 'unknwn'];
     const allFiles = fs.readdirSync(subjectsPath);    
 
 
