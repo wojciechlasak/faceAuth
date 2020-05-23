@@ -26,7 +26,7 @@ const images = allFiles
   .map(faceImg => faceImg.resize(100, 100));
 
 
-const isTargetImage = (_, i) => allFiles[i].includes('111');
+const isTargetImage = (_, i) => allFiles[i].includes('test');
 const isTrainingImage = (_, i) => !isTargetImage(_, i);
 const trainImages = images.filter(isTrainingImage);
 const testImages = images.filter(isTargetImage);

@@ -1,4 +1,4 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <head>
     <title>Lasak FaceAuth</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">    
@@ -6,23 +6,28 @@
     <meta http-equiv="Content-Security-Policy" content="default-src *; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'; img-src * data: 'unsafe-inline'; connect-src * 'unsafe-inline'; frame-src *;">    
 </head>
 <body>
+    <div id="loading-container" class="lightbox-container">
+        <div class="lightbox-bg"></div>
+        <div class="lightbox-in">
+            Przetwarzanie danych...
+        </div>
+    </div>
     <div id="navbar"> 
-        <h1>Autoryzacja za pomocą rozpoznawania twarzy</h1>
+        <h1>Zrób zdjęcie twarzy i dokoncz autoryzacje</h1>
     </div>
+    <a href="./index.html"><button id="home-button" class="button-base">Home</button></a>
     
-    <div>
-        <video class="part2" id="player" autoplay width=640 height="480"></video>
+    <div id="frames-container">
+        <video class="frame" id="player" autoplay width=640 height="480"></video>
+        <canvas class="frame" id="canvas" width=640 height="480"></canvas>  
     </div>
     <div>
-        <button id="capturebutton">Capture</button>
+        <button id="capture-button" class="button-base">Capture</button>
         <form id='uploadForm' action='http://localhost:8080/upload' method='POST'>
-          <input id="fileInput" type="text" name="fileData"/>
-          <input type="submit" value="Upload!"/>
+          <input id="file-input" type="text" name="fileData"/>
+          <input id="upload-button" class="button-base" disabled="true" type="submit" value="Upload"/>
       </form>    
     </div> 
-    <div>
-        <canvas class="part2" id="canvas" width=640 height="480"></canvas>                  
-    </div>
 
     <script src="js/main.js"></script>
 

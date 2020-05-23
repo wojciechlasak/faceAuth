@@ -1,88 +1,140 @@
+html,
 body {
-    background-color: rgb(12, 12, 12);
-    align-content: center;
-    color: rgb(230, 230, 230);
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    padding: 0px;
-    margin: 0px;
+    height: 100%;
+    margin: 0;
+    font-size: 100%;
+    font-family: "Roboto";
+    background-color: #383838;
 }
 
-h1, h2 {
-    font-weight: 100;
-}
-
-input[type=text], select {
-    width: 40%;
-    display: flex;
-    border-radius: 4px;
+* {
     box-sizing: border-box;
-    margin: auto;
-    text-align: center;
 }
 
-input[type=password], select {
-    width: 40%;
-    display: flex;
-    border-radius: 4px;
-    box-sizing: border-box;
-    text-align: center;
-    margin: auto;    
-}
-
-label {
-    display: inline-block;
-    margin: auto;
-}
-
-.login {
-    text-align: center;
-}
-
-.part2 {
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-}
-
-#fileInput {
-    display: none;
-}
-
-#button {
-    background-color: rgb(230, 230, 230);
-    border: none;
-    color: rgb(0, 100, 0);;
-    padding: 10px 20px;
-    margin: 12px;
-    text-align: center;
+a,
+a:hover {
     text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
 }
 
-#capturebutton {
-    background-color: rgb(230, 230, 230);
+a {
+    color: #000;
+}
+
+.air {
+    clear: both;
+    height: 3em;
+}
+
+.button-base {
+    display: block;
+    padding: 0.5em 1em;
+    font-size: 1.2em;
+    border-radius: 1em;
     border: none;
-    color: rgb(0, 100, 0);;
-    padding: 16px 32px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    margin: auto;
-    display: inline-block;
-    align-content: center;
-    
+    background-color: #cccccc;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button-base:hover {
+    background-color: #939393;
+}
+
+#capture-button {
+    position:fixed;
+    bottom: 1em;
+    left: 1em;
+}
+
+#upload-button {
+    position: fixed;
+    bottom: 1em;
+    left: 8em;
+}
+
+#home-button {
+    position: fixed;
+    top: 1em;
+    left: 1em;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    color: #dedada
 }
 
 #navbar {
-    background-color: rgb(15, 15, 15);
-    margin: auto;
-    padding: 6px;
     text-align: center;
+    background-color: #292929;
+    padding: 2em;
 }
 
-#loginTop {
-    font-size: 18px;
-    padding: 6px;
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.form-container input[type="text"],
+.form-container input[type="password"] {
+    width: 50%;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    border: 1px solid #2d2d2d;
+    margin: 0.5em 0;
+}
+
+.form-container label {
+    margin-top: 1em;
+    color: #dedada;
+    font-size: 1.29em;
+}
+
+#file-input {
+    visibility: hidden;
+}
+
+.frame {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.5);
+}
+
+#frames-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+
+.lightbox-container {
+    position:fixed;
+    top:0;
+    width:100%;
+    height: 100%;
+    left:100%;
+    transition:left .3s;
+    z-index:101;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:3em 0;
+}
+
+.lightbox-container.opened{
+    left:0;
+}
+
+.lightbox-bg {
+    background-color:rgba(70, 70, 70, 0.8);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.lightbox-in {
+    position:relative;
+    background-color:#fff;
+    padding:2em;
+    font-size: 2em;
 }

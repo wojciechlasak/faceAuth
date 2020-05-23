@@ -57,6 +57,7 @@ app.post('/upload', async (req, res, next) => {
         }, 500);
 
     } catch (e) {
+        console.log(e)
         res.redirect('/');
         next(e)
     }

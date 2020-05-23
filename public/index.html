@@ -9,13 +9,13 @@
     <div id="navbar"> 
         <h1>Autoryzacja za pomocą rozpoznawania twarzy</h1>
     </div>
-    <div>
-        <form class="login" action="http://localhost:8080/login" method="GET">
-            <label class="login" id="loginTop">Username</label>
+    <div class="form-container">
+        <form action="http://localhost:8080/login" method="GET">
+            <label>Login</label>
             <input type="text" name="username">
-            <label class="login" id="loginTop">Password</label>
+            <label>Hasło</label>
             <input type="password" name="password">
-            <input id="button" type="submit" value="Submit">
+            <input class="button-base" type="submit" value="Zaloguj się">
         </form>
     </div>
 </body>
